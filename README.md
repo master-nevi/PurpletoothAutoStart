@@ -14,3 +14,6 @@ The Purpletooth board sends a lot of AVRCP data over the serial port which provi
 #### Useful Documents:
 * [BC127 Module Firmware Manual](http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Wireless/Bluetooth/Melody_5.0_Manual-RevD-RC10-Release.pdf)
 * [Understanding the BC127 Bluetooth Module](https://learn.sparkfun.com/tutorials/understanding-the-bc127-bluetooth-module/arduino-library?_ga=1.261420174.265801078.1423708522)
+
+#### Notes:
+This Arduino sketch will prevent new devices from being able to pair with the Purpletooth board. Therefore, disconnect the Arduino from the Purpletooth board, power it on, and use the **PAIR** button to add a new device. After initial pairing is complete reconnect the Arduino.
