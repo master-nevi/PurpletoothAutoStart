@@ -62,6 +62,7 @@ void setup() {
   jamModule.stdSetParam("ENABLE_HFP", "OFF");
   jamModule.stdSetParam("ENABLE_PBAP", "OFF");
   jamModule.stdSetParam("AUTOCONN", "1");
+  jamModule.stdSetParam("NAME", "PurpletoothAutoStart");
   jamModule.writeConfig();
   jamModule.reset();
 
