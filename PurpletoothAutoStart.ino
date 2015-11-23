@@ -63,6 +63,7 @@ void setup() {
   jamModule.stdSetParam("ENABLE_PBAP", "OFF");
   jamModule.stdSetParam("AUTOCONN", "1");
   jamModule.stdSetParam("NAME", "PurpletoothAutoStart");
+  jamModule.stdSetParam("MM", "1 1 1");
   jamModule.writeConfig();
   jamModule.reset();
 
@@ -165,6 +166,7 @@ void processCommand(String command) {
 
 void processSerialNotification(String notification) {
   if (notification.startsWith("OPEN_OK AVRCP")) {
+    Serial.println("notification: " + notification);
     commandQueue.push(String("LO_VOL"));
   }
 //  else if (notification.startsWith("AVRCP_MEDIA TITLE:")) {
