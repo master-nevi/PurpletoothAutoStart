@@ -64,6 +64,7 @@ void setup() {
   jamModule.stdSetParam("AUTOCONN", "1");
   jamModule.stdSetParam("NAME", "PurpletoothAutoStart");
   jamModule.stdSetParam("MM", "1 1 1");
+  jamModule.stdSetParam("MUSIC_OLD_AVRCP", "ON");
   jamModule.writeConfig();
   jamModule.reset();
 
